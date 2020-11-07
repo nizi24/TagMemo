@@ -5,7 +5,8 @@ target 'SuguMemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for SuguMemo
+  # Pods for realmtest
+  pod 'RealmSwift'
 
   target 'SuguMemoTests' do
     inherit! :search_paths

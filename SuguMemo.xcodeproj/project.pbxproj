@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CBDCE0304A53A8FA70C6092 /* Pods_SuguMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */; };
+		33467995913FE01E5130751C /* Pods_SuguMemo_SuguMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0516A8D74A6B6DF9441609B4 /* Pods_SuguMemo_SuguMemoUITests.framework */; };
 		6AA484122556BB4F0034DCD6 /* SuguMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */; };
 		6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484132556BB4F0034DCD6 /* ContentView.swift */; };
 		6AA484162556BB520034DCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA484152556BB520034DCD6 /* Assets.xcassets */; };
@@ -15,6 +17,9 @@
 		6AA4842F2556BB520034DCD6 /* SuguMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4842E2556BB520034DCD6 /* SuguMemoUITests.swift */; };
 		6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484422556BC570034DCD6 /* CreateMemoView.swift */; };
 		6AA4844B2556BF440034DCD6 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4844A2556BF440034DCD6 /* Memo.swift */; };
+		6AA484602556CFB70034DCD6 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4845F2556CFB70034DCD6 /* MemoListView.swift */; };
+		6AA484652556D1090034DCD6 /* SaveMemoToRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484642556D1090034DCD6 /* SaveMemoToRealm.swift */; };
+		A7556AE5E134FCA0F4F10992 /* Pods_SuguMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B815E099F1AAF32BF4296763 /* Pods_SuguMemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0516A8D74A6B6DF9441609B4 /* Pods_SuguMemo_SuguMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemo_SuguMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05EA86997203CB2637CC7799 /* Pods-SuguMemo-SuguMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo-SuguMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA4840E2556BB4F0034DCD6 /* SuguMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuguMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguMemoApp.swift; sourceTree = "<group>"; };
 		6AA484132556BB4F0034DCD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		6AA484302556BB520034DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6AA484422556BC570034DCD6 /* CreateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoView.swift; sourceTree = "<group>"; };
 		6AA4844A2556BF440034DCD6 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		6AA4845F2556CFB70034DCD6 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		6AA484642556D1090034DCD6 /* SaveMemoToRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMemoToRealm.swift; sourceTree = "<group>"; };
+		7747A9484A7B0F598E11343B /* Pods-SuguMemo-SuguMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo-SuguMemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF0F5A057574DEC1D5795322 /* Pods-SuguMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemoTests.release.xcconfig"; path = "Target Support Files/Pods-SuguMemoTests/Pods-SuguMemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		B815E099F1AAF32BF4296763 /* Pods_SuguMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC9FD40EB364A92FC985D7A /* Pods-SuguMemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemoTests.debug.xcconfig"; path = "Target Support Files/Pods-SuguMemoTests/Pods-SuguMemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7325B8F1A243466A8A5482B /* Pods-SuguMemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo.debug.xcconfig"; path = "Target Support Files/Pods-SuguMemo/Pods-SuguMemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FACCB389861D5244D5264A4D /* Pods-SuguMemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo.release.xcconfig"; path = "Target Support Files/Pods-SuguMemo/Pods-SuguMemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CBDCE0304A53A8FA70C6092 /* Pods_SuguMemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7556AE5E134FCA0F4F10992 /* Pods_SuguMemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33467995913FE01E5130751C /* Pods_SuguMemo_SuguMemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0388D82D5FD18601C0B5B719 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */,
+				0516A8D74A6B6DF9441609B4 /* Pods_SuguMemo_SuguMemoUITests.framework */,
+				B815E099F1AAF32BF4296763 /* Pods_SuguMemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6AA484052556BB4F0034DCD6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				6AA484222556BB520034DCD6 /* SuguMemoTests */,
 				6AA4842D2556BB520034DCD6 /* SuguMemoUITests */,
 				6AA4840F2556BB4F0034DCD6 /* Products */,
+				8AD9AA61D8388D1F8F4FD67B /* Pods */,
+				0388D82D5FD18601C0B5B719 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA4844A2556BF440034DCD6 /* Memo.swift */,
+				6AA484642556D1090034DCD6 /* SaveMemoToRealm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,8 +180,22 @@
 			isa = PBXGroup;
 			children = (
 				6AA484422556BC570034DCD6 /* CreateMemoView.swift */,
+				6AA4845F2556CFB70034DCD6 /* MemoListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		8AD9AA61D8388D1F8F4FD67B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E7325B8F1A243466A8A5482B /* Pods-SuguMemo.debug.xcconfig */,
+				FACCB389861D5244D5264A4D /* Pods-SuguMemo.release.xcconfig */,
+				7747A9484A7B0F598E11343B /* Pods-SuguMemo-SuguMemoUITests.debug.xcconfig */,
+				05EA86997203CB2637CC7799 /* Pods-SuguMemo-SuguMemoUITests.release.xcconfig */,
+				CEC9FD40EB364A92FC985D7A /* Pods-SuguMemoTests.debug.xcconfig */,
+				AF0F5A057574DEC1D5795322 /* Pods-SuguMemoTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA484332556BB520034DCD6 /* Build configuration list for PBXNativeTarget "SuguMemo" */;
 			buildPhases = (
+				27320E2267591CF0AF6B40B0 /* [CP] Check Pods Manifest.lock */,
 				6AA4840A2556BB4F0034DCD6 /* Sources */,
 				6AA4840B2556BB4F0034DCD6 /* Frameworks */,
 				6AA4840C2556BB4F0034DCD6 /* Resources */,
+				CE18F782014D418DE0692A8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA484362556BB520034DCD6 /* Build configuration list for PBXNativeTarget "SuguMemoTests" */;
 			buildPhases = (
+				0DBA01D7F89ECBEE8A1D5C79 /* [CP] Check Pods Manifest.lock */,
 				6AA4841B2556BB520034DCD6 /* Sources */,
 				6AA4841C2556BB520034DCD6 /* Frameworks */,
 				6AA4841D2556BB520034DCD6 /* Resources */,
@@ -194,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AA484392556BB520034DCD6 /* Build configuration list for PBXNativeTarget "SuguMemoUITests" */;
 			buildPhases = (
+				A794273E833D60EFF7019671 /* [CP] Check Pods Manifest.lock */,
 				6AA484262556BB520034DCD6 /* Sources */,
 				6AA484272556BB520034DCD6 /* Frameworks */,
 				6AA484282556BB520034DCD6 /* Resources */,
+				CCC8D1E92E3C1CB9B16CAE99 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -276,6 +327,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0DBA01D7F89ECBEE8A1D5C79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuguMemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27320E2267591CF0AF6B40B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuguMemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A794273E833D60EFF7019671 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SuguMemo-SuguMemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCC8D1E92E3C1CB9B16CAE99 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE18F782014D418DE0692A8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuguMemo/Pods-SuguMemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SuguMemo/Pods-SuguMemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SuguMemo/Pods-SuguMemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AA4840A2556BB4F0034DCD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,7 +438,9 @@
 				6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */,
 				6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */,
 				6AA484122556BB4F0034DCD6 /* SuguMemoApp.swift in Sources */,
+				6AA484602556CFB70034DCD6 /* MemoListView.swift in Sources */,
 				6AA4844B2556BF440034DCD6 /* Memo.swift in Sources */,
+				6AA484652556D1090034DCD6 /* SaveMemoToRealm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +594,7 @@
 		};
 		6AA484342556BB520034DCD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7325B8F1A243466A8A5482B /* Pods-SuguMemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -459,6 +616,7 @@
 		};
 		6AA484352556BB520034DCD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FACCB389861D5244D5264A4D /* Pods-SuguMemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -480,6 +638,7 @@
 		};
 		6AA484372556BB520034DCD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC9FD40EB364A92FC985D7A /* Pods-SuguMemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -501,6 +660,7 @@
 		};
 		6AA484382556BB520034DCD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0F5A057574DEC1D5795322 /* Pods-SuguMemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -522,6 +682,7 @@
 		};
 		6AA4843A2556BB520034DCD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7747A9484A7B0F598E11343B /* Pods-SuguMemo-SuguMemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +702,7 @@
 		};
 		6AA4843B2556BB520034DCD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05EA86997203CB2637CC7799 /* Pods-SuguMemo-SuguMemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
