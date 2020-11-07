@@ -13,6 +13,8 @@
 		6AA484192556BB520034DCD6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA484182556BB520034DCD6 /* Preview Assets.xcassets */; };
 		6AA484242556BB520034DCD6 /* SuguMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484232556BB520034DCD6 /* SuguMemoTests.swift */; };
 		6AA4842F2556BB520034DCD6 /* SuguMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4842E2556BB520034DCD6 /* SuguMemoUITests.swift */; };
+		6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484422556BC570034DCD6 /* CreateMemoView.swift */; };
+		6AA4844B2556BF440034DCD6 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4844A2556BF440034DCD6 /* Memo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		6AA4842A2556BB520034DCD6 /* SuguMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuguMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA4842E2556BB520034DCD6 /* SuguMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguMemoUITests.swift; sourceTree = "<group>"; };
 		6AA484302556BB520034DCD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA484422556BC570034DCD6 /* CreateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoView.swift; sourceTree = "<group>"; };
+		6AA4844A2556BF440034DCD6 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		6AA484102556BB4F0034DCD6 /* SuguMemo */ = {
 			isa = PBXGroup;
 			children = (
+				6AA484412556BBB40034DCD6 /* Views */,
+				6AA484402556BBA40034DCD6 /* Model */,
 				6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */,
 				6AA484132556BB4F0034DCD6 /* ContentView.swift */,
 				6AA484152556BB520034DCD6 /* Assets.xcassets */,
@@ -128,6 +134,22 @@
 				6AA484302556BB520034DCD6 /* Info.plist */,
 			);
 			path = SuguMemoUITests;
+			sourceTree = "<group>";
+		};
+		6AA484402556BBA40034DCD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AA4844A2556BF440034DCD6 /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6AA484412556BBB40034DCD6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6AA484422556BC570034DCD6 /* CreateMemoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */,
 				6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */,
 				6AA484122556BB4F0034DCD6 /* SuguMemoApp.swift in Sources */,
+				6AA4844B2556BF440034DCD6 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

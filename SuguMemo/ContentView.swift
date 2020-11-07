@@ -9,8 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            TabView {
+                Text("一覧")
+                    .tabItem {
+                        VStack {
+                            Text("メモ")
+                        }
+                    }
+                CreateMemoView()
+                    .tabItem {
+                        VStack {
+                            Text("新規作成")
+                        }
+                    }
+            }
+        }
     }
 }
 
