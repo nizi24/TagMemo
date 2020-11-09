@@ -7,7 +7,25 @@
 		<key>SuguMemo.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6AA4840D2556BB4F0034DCD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AA4841E2556BB520034DCD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AA484292556BB520034DCD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

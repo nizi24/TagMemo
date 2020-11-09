@@ -6,34 +6,40 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct CreateMemoView: View {
-    @State var title = ""
-    @State var context = ""
+    @ObservedObject var viewModel = CreateMemoViewModel()
+    @EnvironmentObject var memoListViewModel: MemoListViewModel
     
     var body: some View {
-        VStack {
-            Form {
-                TextField("タイトル", text: $title)
-                TextEditor(text: $context)
-                    .frame(maxWidth: .infinity)
+        NavigationView {
+            VStack {
+                Form {
+                    TextField("タイトル", text: $viewModel.title)
+                    TextEditor(text: $viewModel.context)
+                        .frame(maxWidth: .infinity)
+                }
             }
+            .navigationBarTitle(Text("新規作成"), displayMode: .inline)
+            .navigationBarItems(trailing:
+                        Button(action: {
+                            do {
+                            try viewModel.saveToRealm()
+                                memoListViewModel.memoList.append(Memo(context: viewModel.context, title: viewModel.title))
+                                viewModel.reset()
+                            } catch {
+                                fatalError("メモを保存できませんでした")
+                            }
+                        }, label: {
+                Image(systemName: "plus")
+            }))
         }
-        .navigationBarTitle(Text("新規作成"), displayMode: .inline)
-        .navigationBarItems(trailing:
-                    Button(action: {
-                        
-                    }, label: {
-            Image(systemName: "plus")
-        }))
-        
     }
 }
 
 struct CreateMemoView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            CreateMemoView()
-        }
+        CreateMemoView()
     }
 }

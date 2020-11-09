@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2CBDCE0304A53A8FA70C6092 /* Pods_SuguMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */; };
 		33467995913FE01E5130751C /* Pods_SuguMemo_SuguMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0516A8D74A6B6DF9441609B4 /* Pods_SuguMemo_SuguMemoUITests.framework */; };
+		6A6564572558232600DF8803 /* MemoDBMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6564562558232600DF8803 /* MemoDBMock.swift */; };
+		6A65645C25582D8E00DF8803 /* MemoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65645B25582D8E00DF8803 /* MemoListViewModelTests.swift */; };
 		6AA484122556BB4F0034DCD6 /* SuguMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */; };
 		6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484132556BB4F0034DCD6 /* ContentView.swift */; };
 		6AA484162556BB520034DCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA484152556BB520034DCD6 /* Assets.xcassets */; };
@@ -18,7 +20,9 @@
 		6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484422556BC570034DCD6 /* CreateMemoView.swift */; };
 		6AA4844B2556BF440034DCD6 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4844A2556BF440034DCD6 /* Memo.swift */; };
 		6AA484602556CFB70034DCD6 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA4845F2556CFB70034DCD6 /* MemoListView.swift */; };
-		6AA484652556D1090034DCD6 /* SaveMemoToRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484642556D1090034DCD6 /* SaveMemoToRealm.swift */; };
+		6AD102D2255771120024D75F /* MemoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD102D1255771120024D75F /* MemoDB.swift */; };
+		6AD102EB2557D6410024D75F /* CreateMemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD102EA2557D6410024D75F /* CreateMemoViewModel.swift */; };
+		6AD102FB2557E44F0024D75F /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD102FA2557E44F0024D75F /* MemoListViewModel.swift */; };
 		A7556AE5E134FCA0F4F10992 /* Pods_SuguMemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B815E099F1AAF32BF4296763 /* Pods_SuguMemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +47,8 @@
 		0516A8D74A6B6DF9441609B4 /* Pods_SuguMemo_SuguMemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemo_SuguMemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05EA86997203CB2637CC7799 /* Pods-SuguMemo-SuguMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo-SuguMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A6564562558232600DF8803 /* MemoDBMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDBMock.swift; sourceTree = "<group>"; };
+		6A65645B25582D8E00DF8803 /* MemoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModelTests.swift; sourceTree = "<group>"; };
 		6AA4840E2556BB4F0034DCD6 /* SuguMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuguMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguMemoApp.swift; sourceTree = "<group>"; };
 		6AA484132556BB4F0034DCD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,7 +64,9 @@
 		6AA484422556BC570034DCD6 /* CreateMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoView.swift; sourceTree = "<group>"; };
 		6AA4844A2556BF440034DCD6 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
 		6AA4845F2556CFB70034DCD6 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
-		6AA484642556D1090034DCD6 /* SaveMemoToRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveMemoToRealm.swift; sourceTree = "<group>"; };
+		6AD102D1255771120024D75F /* MemoDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDB.swift; sourceTree = "<group>"; };
+		6AD102EA2557D6410024D75F /* CreateMemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMemoViewModel.swift; sourceTree = "<group>"; };
+		6AD102FA2557E44F0024D75F /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
 		7747A9484A7B0F598E11343B /* Pods-SuguMemo-SuguMemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo-SuguMemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0F5A057574DEC1D5795322 /* Pods-SuguMemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemoTests.release.xcconfig"; path = "Target Support Files/Pods-SuguMemoTests/Pods-SuguMemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		B815E099F1AAF32BF4296763 /* Pods_SuguMemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +113,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6A6564522558221900DF8803 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6A6564562558232600DF8803 /* MemoDBMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		6AA484052556BB4F0034DCD6 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +146,7 @@
 		6AA484102556BB4F0034DCD6 /* SuguMemo */ = {
 			isa = PBXGroup;
 			children = (
+				6AD102E92557D62E0024D75F /* ViewModel */,
 				6AA484412556BBB40034DCD6 /* Views */,
 				6AA484402556BBA40034DCD6 /* Model */,
 				6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */,
@@ -152,8 +169,10 @@
 		6AA484222556BB520034DCD6 /* SuguMemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				6A6564522558221900DF8803 /* Mocks */,
 				6AA484232556BB520034DCD6 /* SuguMemoTests.swift */,
 				6AA484252556BB520034DCD6 /* Info.plist */,
+				6A65645B25582D8E00DF8803 /* MemoListViewModelTests.swift */,
 			);
 			path = SuguMemoTests;
 			sourceTree = "<group>";
@@ -171,7 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				6AA4844A2556BF440034DCD6 /* Memo.swift */,
-				6AA484642556D1090034DCD6 /* SaveMemoToRealm.swift */,
+				6AD102D1255771120024D75F /* MemoDB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +202,15 @@
 				6AA4845F2556CFB70034DCD6 /* MemoListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6AD102E92557D62E0024D75F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6AD102EA2557D6410024D75F /* CreateMemoViewModel.swift */,
+				6AD102FA2557E44F0024D75F /* MemoListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8AD9AA61D8388D1F8F4FD67B /* Pods */ = {
@@ -437,10 +465,12 @@
 			files = (
 				6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */,
 				6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */,
+				6AD102D2255771120024D75F /* MemoDB.swift in Sources */,
 				6AA484122556BB4F0034DCD6 /* SuguMemoApp.swift in Sources */,
+				6AD102EB2557D6410024D75F /* CreateMemoViewModel.swift in Sources */,
+				6AD102FB2557E44F0024D75F /* MemoListViewModel.swift in Sources */,
 				6AA484602556CFB70034DCD6 /* MemoListView.swift in Sources */,
 				6AA4844B2556BF440034DCD6 /* Memo.swift in Sources */,
-				6AA484652556D1090034DCD6 /* SaveMemoToRealm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +479,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AA484242556BB520034DCD6 /* SuguMemoTests.swift in Sources */,
+				6A6564572558232600DF8803 /* MemoDBMock.swift in Sources */,
+				6A65645C25582D8E00DF8803 /* MemoListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +632,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SuguMemo/Preview Content\"";
+				DEVELOPMENT_TEAM = SHRYHV5Z92;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SuguMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -610,7 +643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunishida.SuguMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -622,6 +655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SuguMemo/Preview Content\"";
+				DEVELOPMENT_TEAM = SHRYHV5Z92;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SuguMemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -632,7 +666,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yunishida.SuguMemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
