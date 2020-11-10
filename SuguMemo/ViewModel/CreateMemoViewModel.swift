@@ -12,11 +12,11 @@ class CreateMemoViewModel: ObservableObject {
     @Published var title = ""
     @Published var context = ""
     
-    func saveToRealm() throws {
+    func saveToRealm() throws -> MemoDB {
         let memodb = MemoDB()
         memodb.title = title
         memodb.context = context
-        try memodb.saveToRealm()
+        return try memodb.saveToRealm()
     }
     
     func reset() {

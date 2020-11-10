@@ -1,21 +1,24 @@
 //
-//  CreateMemoView.swift
+//  SwiftUIView.swift
 //  SuguMemo
 //
-//  Created by Yuu Nishida on 2020/11/07.
+//  Created by Yuu Nishida on 2020/11/10.
 //
 
 import SwiftUI
-import RealmSwift
 
-struct CreateMemoView: View {
+struct EditMemoView: View {
     @ObservedObject var viewModel = CreateMemoViewModel()
     @EnvironmentObject var memoListViewModel: MemoListViewModel
     
     var body: some View {
         NavigationView {
             VStack {
-                MemoForm(title: $viewModel.title, context: $viewModel.context)
+                Form {
+                    TextField("タイトル", text: $viewModel.title)
+                    TextEditor(text: $viewModel.context)
+                        .frame(maxWidth: .infinity)
+                }
             }
             .navigationBarTitle(Text("新規作成"), displayMode: .inline)
             .navigationBarItems(trailing:
@@ -34,8 +37,9 @@ struct CreateMemoView: View {
     }
 }
 
-struct CreateMemoView_Previews: PreviewProvider {
+struct EditMemoView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateMemoView()
+        EditMemoView()
     }
 }
+

@@ -25,8 +25,14 @@ class MemoListViewModel: ObservableObject {
             return
         }
         for memodb in result {
-            let memo = Memo(context: memodb.context, title: memodb.title)
+            let memo = Memo(id: memodb.id, context: memodb.context, title: memodb.title)
             self.memoList.append(memo)
         }
+    }
+    
+    func deleteMemo(targetMemo: Memo)  {
+        memoList = memoList.filter { $0.id != targetMemo.id }
+        let memodb = MemoDB().newMemoDB(memo: targetMemo)
+        memodb.delete()
     }
 }

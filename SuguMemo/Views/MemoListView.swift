@@ -14,12 +14,15 @@ struct MemoListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.memoList, id: \.self) { memo in
-                    NavigationLink(destination: Text(memo.context)) {
+                    NavigationLink(destination: EditMemoVIew(viewModel: EditMemoViewModel(id: memo.id, title: memo.title, context: memo.context))) {
                         Text(memo.title)
                     }
-                }
+                }.onDelete(perform: { indexSet in
+                    viewModel.deleteMemo(targetMemo: viewModel.memoList[indexSet.count - 1])
+                })
             }
             .navigationBarTitle(Text("メモ一覧"), displayMode: .inline)
+            .navigationBarItems(trailing: EditButton())
         }
     }
 }
