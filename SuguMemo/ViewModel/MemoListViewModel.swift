@@ -10,12 +10,7 @@ import Combine
 import RealmSwift
 
 class MemoListViewModel: ObservableObject {
-    @Published var memoList: [Memo] = [] {
-        willSet {
-            print(memoList)
-        }
-    }
-    
+    @Published var memoList: [Memo] = []
     init(memodb: MemoDBProtocol = MemoDB()) {
         self.getAllInRealm(memodb: memodb)
     }

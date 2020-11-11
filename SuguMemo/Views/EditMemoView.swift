@@ -10,19 +10,10 @@ import SwiftUI
 struct EditMemoVIew: View {
     @ObservedObject var viewModel: EditMemoViewModel
     @EnvironmentObject var memoListViewModel: MemoListViewModel
-    
-    var body: some View {
-        VStack {
-            MemoForm(title: $viewModel.title, context: $viewModel.context)
-        }
-        .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
-    }
-    
-    func updateMemoList(updatedMemodb: MemoDB) {
-        ContentView().environmentObject(MemoListViewModel())
-        var memoList = memoListViewModel.memoList
-        memoList = memoList.map { memo in
-            if memo.id == self.viewModel.id {
+    var updateMemoList: (MemoListViewModel, EditMemoViewModel) -> Void = { memoListViewModel, viewModel in
+        let memoList = memoListViewModel.memoList
+        memoListViewModel.memoList = memoList.map { memo in
+            if memo.id == viewModel.id {
                 var updateMemo = memo
                 updateMemo.title = viewModel.title
                 updateMemo.context = viewModel.context
@@ -30,6 +21,19 @@ struct EditMemoVIew: View {
             }
             return memo
         }
+    }
+    
+    var body: some View {
+        VStack {
+            MemoForm(title: $viewModel.title, context: $viewModel.context)
+                .onChange(of: viewModel.title, perform: { newTitle in
+                    updateMemoList(memoListViewModel, viewModel)
+                })
+                .onChange(of: viewModel.title, perform: { newContext in
+                    updateMemoList(memoListViewModel, viewModel)
+                })
+        }
+        .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
     }
 }
 

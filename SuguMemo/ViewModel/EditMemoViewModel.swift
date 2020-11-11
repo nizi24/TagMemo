@@ -29,7 +29,6 @@ class EditMemoViewModel: ObservableObject  {
     
     func update() {
         let memodb = MemoDB().newMemoDB(memo: Memo(id: id, context: context, title: title))
-        let updatedMemodb = memodb.update()
-        EditMemoVIew(viewModel: self).updateMemoList(updatedMemodb: updatedMemodb)
+        memodb.update()
     }
 }
