@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selection = 1
+    
     var body: some View {
-        TabView {
+        TabView(selection: $selection) {
             MemoListView()
                 .tabItem {
                     VStack {
@@ -17,6 +19,7 @@ struct ContentView: View {
                         Text("メモ")
                     }
                 }
+                .tag(0)
             CreateMemoView()
                 .tabItem {
                     VStack {
@@ -24,6 +27,7 @@ struct ContentView: View {
                         Text("新規作成")
                     }
                 }
+                .tag(1)
         }
     }
 }

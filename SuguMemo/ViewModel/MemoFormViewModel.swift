@@ -9,10 +9,11 @@ import Foundation
 
 struct MemoValidation {
     
-    func validationTitle() {
-    }
-    
-    func validationConText() {
+    func validationConText(_ context: String) -> Bool {
+        guard !context.isEmpty else {
+            return false
+        }
+        return true
     }
     
     func validationTagName(_ tagName: String) -> Bool {

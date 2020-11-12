@@ -30,7 +30,7 @@ struct EditMemoVIew: View {
                 .onChange(of: viewModel.title, perform: { newTitle in
                     updateMemoList(memoListViewModel, viewModel)
                 })
-                .onChange(of: viewModel.title, perform: { newContext in
+                .onChange(of: viewModel.context, perform: { newContext in
                     updateMemoList(memoListViewModel, viewModel)
                 })
         }

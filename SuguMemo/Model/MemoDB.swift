@@ -45,7 +45,7 @@ class MemoDB: Object, MemoDBProtocol {
     }
     
     func getAll() -> [MemoDBProtocol]? {
-        print(Realm.Configuration.defaultConfiguration.fileURL)
+//        print(Realm.Configuration.defaultConfiguration.fileURL)
         realmMigration()
         let realm = try! Realm()
         let realmMemoDBArray = realm.objects(MemoDB.self)
