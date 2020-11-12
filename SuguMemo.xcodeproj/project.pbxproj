@@ -10,10 +10,12 @@
 		2CBDCE0304A53A8FA70C6092 /* Pods_SuguMemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */; };
 		33467995913FE01E5130751C /* Pods_SuguMemo_SuguMemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0516A8D74A6B6DF9441609B4 /* Pods_SuguMemo_SuguMemoUITests.framework */; };
 		6A5DD07B255AC17D00472B49 /* EditMemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5DD07A255AC17D00472B49 /* EditMemoViewModel.swift */; };
+		6A620911255CD64500509EBB /* MemoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A620910255CD64500509EBB /* MemoFormViewModel.swift */; };
 		6A6564572558232600DF8803 /* MemoDBMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6564562558232600DF8803 /* MemoDBMock.swift */; };
 		6A65645C25582D8E00DF8803 /* MemoListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A65645B25582D8E00DF8803 /* MemoListViewModelTests.swift */; };
 		6A8B3C55255AC252003DACE0 /* EditMemoVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B3C54255AC252003DACE0 /* EditMemoVIew.swift */; };
 		6A8B3C5A255AC528003DACE0 /* MemoForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B3C59255AC528003DACE0 /* MemoForm.swift */; };
+		6A8B3C5F255C1F5A003DACE0 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B3C5E255C1F5A003DACE0 /* Tag.swift */; };
 		6AA484122556BB4F0034DCD6 /* SuguMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */; };
 		6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA484132556BB4F0034DCD6 /* ContentView.swift */; };
 		6AA484162556BB520034DCD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AA484152556BB520034DCD6 /* Assets.xcassets */; };
@@ -51,10 +53,12 @@
 		05EA86997203CB2637CC7799 /* Pods-SuguMemo-SuguMemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuguMemo-SuguMemoUITests.release.xcconfig"; path = "Target Support Files/Pods-SuguMemo-SuguMemoUITests/Pods-SuguMemo-SuguMemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		33DF1C2634604C7F5174345C /* Pods_SuguMemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuguMemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5DD07A255AC17D00472B49 /* EditMemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemoViewModel.swift; sourceTree = "<group>"; };
+		6A620910255CD64500509EBB /* MemoFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoFormViewModel.swift; sourceTree = "<group>"; };
 		6A6564562558232600DF8803 /* MemoDBMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoDBMock.swift; sourceTree = "<group>"; };
 		6A65645B25582D8E00DF8803 /* MemoListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModelTests.swift; sourceTree = "<group>"; };
 		6A8B3C54255AC252003DACE0 /* EditMemoVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemoVIew.swift; sourceTree = "<group>"; };
 		6A8B3C59255AC528003DACE0 /* MemoForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoForm.swift; sourceTree = "<group>"; };
+		6A8B3C5E255C1F5A003DACE0 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		6AA4840E2556BB4F0034DCD6 /* SuguMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuguMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA484112556BB4F0034DCD6 /* SuguMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguMemoApp.swift; sourceTree = "<group>"; };
 		6AA484132556BB4F0034DCD6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			children = (
 				6AA4844A2556BF440034DCD6 /* Memo.swift */,
 				6AD102D1255771120024D75F /* MemoDB.swift */,
+				6A8B3C5E255C1F5A003DACE0 /* Tag.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				6AD102EA2557D6410024D75F /* CreateMemoViewModel.swift */,
 				6AD102FA2557E44F0024D75F /* MemoListViewModel.swift */,
 				6A5DD07A255AC17D00472B49 /* EditMemoViewModel.swift */,
+				6A620910255CD64500509EBB /* MemoFormViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -472,6 +478,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8B3C5F255C1F5A003DACE0 /* Tag.swift in Sources */,
+				6A620911255CD64500509EBB /* MemoFormViewModel.swift in Sources */,
 				6A8B3C55255AC252003DACE0 /* EditMemoVIew.swift in Sources */,
 				6AA484432556BC570034DCD6 /* CreateMemoView.swift in Sources */,
 				6AA484142556BB4F0034DCD6 /* ContentView.swift in Sources */,

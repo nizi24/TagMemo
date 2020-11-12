@@ -12,6 +12,7 @@ protocol MemoDBProtocol {
     var id: String { get }
     var title: String { get set }
     var context: String { get set }
+    var tags: List<Tag> { get set }
     
     func saveToRealm() throws -> MemoDB
     func getAll() -> [MemoDBProtocol]?
@@ -21,6 +22,7 @@ class MemoDB: Object, MemoDBProtocol {
     @objc dynamic var id = NSUUID().uuidString
     @objc dynamic var title = ""
     @objc dynamic var context = ""
+    var tags = List<Tag>()
     
     override static func primaryKey() -> String? {
             return "id"
@@ -38,11 +40,12 @@ class MemoDB: Object, MemoDBProtocol {
         id = memo.id
         title = memo.title
         context = memo.context
+        tags.append(objectsIn: memo.tags)
         return self
     }
     
     func getAll() -> [MemoDBProtocol]? {
-//        print(Realm.Configuration.defaultConfiguration.fileURL)
+        print(Realm.Configuration.defaultConfiguration.fileURL)
         realmMigration()
         let realm = try! Realm()
         let realmMemoDBArray = realm.objects(MemoDB.self)
@@ -61,6 +64,7 @@ class MemoDB: Object, MemoDBProtocol {
         try! realm.write {
             editTarget?.title = title
             editTarget?.context = context
+            editTarget?.setValue(tags, forKey: "tags")
         }
         return self
     }
@@ -74,7 +78,7 @@ class MemoDB: Object, MemoDBProtocol {
     }
     
     func realmMigration() {
-        let schemaVersion: UInt64 = 1
+        let schemaVersion: UInt64 = 2
 
         let config = Realm.Configuration(
             schemaVersion: schemaVersion,

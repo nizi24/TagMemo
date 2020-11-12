@@ -14,7 +14,7 @@ struct MemoListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.memoList, id: \.self) { memo in
-                    NavigationLink(destination: EditMemoVIew(viewModel: EditMemoViewModel(id: memo.id, title: memo.title, context: memo.context))) {
+                    NavigationLink(destination: EditMemoVIew(viewModel: EditMemoViewModel(id: memo.id, title: memo.title, context: memo.context, tags: memo.tags))) {
                         Text(memo.title)
                     }
                 }.onDelete(perform: { indexSet in

@@ -13,12 +13,14 @@ struct ContentView: View {
             MemoListView()
                 .tabItem {
                     VStack {
+                        Image(systemName: "list.bullet")
                         Text("メモ")
                     }
                 }
             CreateMemoView()
                 .tabItem {
                     VStack {
+                        Image(systemName: "note.text.badge.plus")
                         Text("新規作成")
                     }
                 }

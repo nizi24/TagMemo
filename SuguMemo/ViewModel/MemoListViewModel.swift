@@ -20,7 +20,7 @@ class MemoListViewModel: ObservableObject {
             return
         }
         for memodb in result {
-            let memo = Memo(id: memodb.id, context: memodb.context, title: memodb.title)
+            let memo = Memo(id: memodb.id, context: memodb.context, tags: Array(memodb.tags), title: memodb.title)
             self.memoList.append(memo)
         }
     }

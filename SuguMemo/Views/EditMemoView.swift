@@ -17,6 +17,7 @@ struct EditMemoVIew: View {
                 var updateMemo = memo
                 updateMemo.title = viewModel.title
                 updateMemo.context = viewModel.context
+                updateMemo.tags = viewModel.tags
                 return updateMemo
             }
             return memo
@@ -25,7 +26,7 @@ struct EditMemoVIew: View {
     
     var body: some View {
         VStack {
-            MemoForm(title: $viewModel.title, context: $viewModel.context)
+            MemoForm(title: $viewModel.title, context: $viewModel.context, tags: $viewModel.tags)
                 .onChange(of: viewModel.title, perform: { newTitle in
                     updateMemoList(memoListViewModel, viewModel)
                 })
@@ -40,7 +41,7 @@ struct EditMemoVIew: View {
 struct EditMemoVIew_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            EditMemoVIew(viewModel: EditMemoViewModel(id: "", title: "test", context: "foobar"))
+            EditMemoVIew(viewModel: EditMemoViewModel(id: "", title: "test", context: "foobar", tags: [Tag()]))
         }
     }
 }

@@ -15,14 +15,14 @@ struct CreateMemoView: View {
     var body: some View {
         NavigationView {
             VStack {
-                MemoForm(title: $viewModel.title, context: $viewModel.context)
+                MemoForm(title: $viewModel.title, context: $viewModel.context, tags: $viewModel.tags)
             }
             .navigationBarTitle(Text("新規作成"), displayMode: .inline)
             .navigationBarItems(trailing:
                         Button(action: {
                             do {
                                 let memodb = try viewModel.saveToRealm()
-                                memoListViewModel.memoList.append(Memo(id: memodb.id, context: viewModel.context, title: viewModel.title))
+                                memoListViewModel.memoList.append(Memo(id: memodb.id, context: viewModel.context, tags: viewModel.tags, title: viewModel.title))
                                 viewModel.reset()
                             } catch {
                                 fatalError("メモを保存できませんでした")
