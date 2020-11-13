@@ -33,6 +33,9 @@ struct EditMemoVIew: View {
                 .onChange(of: viewModel.context, perform: { newContext in
                     updateMemoList(memoListViewModel, viewModel)
                 })
+                .onChange(of: viewModel.tags, perform: { newTags in
+                    updateMemoList(memoListViewModel, viewModel)
+                })
         }
         .navigationBarTitle(Text(viewModel.title), displayMode: .inline)
     }

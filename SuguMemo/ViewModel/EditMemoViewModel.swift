@@ -22,7 +22,6 @@ class EditMemoViewModel: ObservableObject  {
     }
     @Published var tags: [Tag] {
         didSet {
-            print(tags)
             update()
         }
     }

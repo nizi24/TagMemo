@@ -10,6 +10,7 @@ import RealmSwift
 @testable import SuguMemo
 
 class MemoDBMock: MemoDBProtocol {
+    var tags = List<Tag>()
     var id = NSUUID().uuidString
     var title = ""
     var context = ""

@@ -29,6 +29,9 @@ struct ContentView: View {
                 }
                 .tag(1)
         }
+        .onAppear(perform: {
+            Setting().findOrCreate()
+        })
     }
 }
 

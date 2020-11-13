@@ -12,17 +12,13 @@ struct MemoListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.memoList, id: \.self) { memo in
-                    NavigationLink(destination: EditMemoVIew(viewModel: EditMemoViewModel(id: memo.id, title: memo.title, context: memo.context, tags: memo.tags))) {
-                        Text(memo.title)
-                    }
-                }.onDelete(perform: { indexSet in
-                    viewModel.deleteMemo(targetMemo: viewModel.memoList[indexSet.count - 1])
-                })
-            }
+            MemoList(memoList: $viewModel.memoList)
             .navigationBarTitle(Text("メモ一覧"), displayMode: .inline)
-            .navigationBarItems(trailing: EditButton())
+            .navigationBarItems(leading: EditButton(), trailing:
+                NavigationLink(destination: SearchView()) {
+                    Image(systemName: "magnifyingglass")
+                }
+            )
         }
     }
 }

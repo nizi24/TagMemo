@@ -51,9 +51,8 @@ class MemoDB: Object, MemoDBProtocol {
         let realmMemoDBArray = realm.objects(MemoDB.self)
         var memoDBArray: [MemoDB] = []
         for realmMemoDB in realmMemoDBArray {
-            if let memodb = realmMemoDB as? MemoDB {
-                memoDBArray.append(memodb)
-            }
+            let memodb = realmMemoDB as MemoDB
+            memoDBArray.append(memodb)
         }
         return memoDBArray
     }
@@ -78,7 +77,7 @@ class MemoDB: Object, MemoDBProtocol {
     }
     
     func realmMigration() {
-        let schemaVersion: UInt64 = 2
+        let schemaVersion: UInt64 = 4
 
         let config = Realm.Configuration(
             schemaVersion: schemaVersion,
