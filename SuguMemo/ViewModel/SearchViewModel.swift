@@ -12,7 +12,8 @@ class SearchViewModel: ObservableObject {
     var searchType: [SearchType] {
         Setting().getSetting().searchType
     }
-    @Published var results: [Memo] = []    
+    @Published var results: [Memo] = []
+    
     func search() {
         results = []
         guard !searchWord.isEmpty else {
@@ -23,5 +24,13 @@ class SearchViewModel: ObservableObject {
             let memo = Memo(id: result.id, context: result.context, tags: Array(result.tags), title: result.title)
             results.append(memo)
         }
+    }
+    
+    func searchInMemoList(memoList: [Memo]) -> [Memo] {
+        var r: [Memo] = []
+        for memo in memoList {
+            r = results.filter { $0.id == memo.id }
+        }
+        return r
     }
 }

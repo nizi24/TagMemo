@@ -217,8 +217,8 @@
             filePath = "SuguMemo/ViewModel/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "search()"
             landmarkType = "7">
          </BreakpointContent>
@@ -258,54 +258,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A5FA74C8-3A8F-4586-B728-8D8FB39EE0FB"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SuguMemo/ViewModel/MemoListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "deleteMemo(targetMemo:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A5FA74C8-3A8F-4586-B728-8D8FB39EE0FB - fe8602f0fcd7fbfe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SuguMemo.MemoListViewModel.deleteMemo(targetMemo: SuguMemo.Memo) -&gt; ()"
-                  moduleName = "SuguMemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuunishida/SuguMemo/SuguMemo/ViewModel/MemoListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "193">
-               </Location>
-               <Location
-                  uuid = "A5FA74C8-3A8F-4586-B728-8D8FB39EE0FB - 9d91a64cf3ce8b6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (SuguMemo.Memo) -&gt; Swift.Bool in SuguMemo.MemoListViewModel.deleteMemo(targetMemo: SuguMemo.Memo) -&gt; ()"
-                  moduleName = "SuguMemo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yuunishida/SuguMemo/SuguMemo/ViewModel/MemoListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "34363F64-10C9-4657-A11B-3A5879B6335B"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -313,8 +265,8 @@
             filePath = "SuguMemo/ViewModel/MemoListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "deleteMemo(targetMemo:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -329,8 +281,8 @@
             filePath = "SuguMemo/ViewModel/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "search()"
             landmarkType = "7">
          </BreakpointContent>
@@ -345,8 +297,8 @@
             filePath = "SuguMemo/ViewModel/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "search()"
             landmarkType = "7">
          </BreakpointContent>
@@ -361,26 +313,10 @@
             filePath = "SuguMemo/ViewModel/SearchViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "search()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2D928DB6-5083-404C-9C5B-C7F5D576511F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SuguMemo/Views/MemoList.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "body"
-            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -429,6 +365,22 @@
                   offsetFromSymbolStart = "411">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED60FD70-51A8-4570-A4CE-FA6A21DA6710"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SuguMemo/Views/MemoListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

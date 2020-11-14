@@ -28,13 +28,13 @@ struct EditMemoVIew: View {
         VStack {
             MemoForm(title: $viewModel.title, context: $viewModel.context, tags: $viewModel.tags)
                 .onChange(of: viewModel.title, perform: { newTitle in
-                    updateMemoList(memoListViewModel, viewModel)
+//                    updateMemoList(memoListViewModel, viewModel)
                 })
                 .onChange(of: viewModel.context, perform: { newContext in
-                    updateMemoList(memoListViewModel, viewModel)
+//                    updateMemoList(memoListViewModel, viewModel)
                 })
                 .onChange(of: viewModel.tags, perform: { newTags in
-                    updateMemoList(memoListViewModel, viewModel)
+//                    updateMemoList(memoListViewModel, viewModel)
                 })
         }
         .navigationBarTitle(Text(viewModel.title), displayMode: .inline)

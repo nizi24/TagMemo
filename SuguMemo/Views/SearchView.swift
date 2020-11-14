@@ -15,7 +15,7 @@ struct SearchView: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("検索", text: $viewModel.searchWord)
+                TextField("検索",  text: $viewModel.searchWord)
                     .padding()
                     .onChange(of: viewModel.searchWord, perform: { value in
                         viewModel.search()
@@ -38,6 +38,9 @@ struct SearchView: View {
         )
         .sheet(isPresented: $settingView) {
             SearchSettingView()
+        }
+        .onAppear {
+            viewModel.search()
         }
     }
 }

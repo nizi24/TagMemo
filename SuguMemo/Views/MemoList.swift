@@ -24,9 +24,12 @@ struct MemoList: View {
                     Text(MemoDisplayProcessor(memo: memo).title())
                 }
             }.onDelete(perform: { indexSet in
-                memoListViewModel.deleteMemo(targetMemo: memoList[indexSet.first!])
                 if results != [] {
+                    let memodb = MemoDB().newMemoDB(memo: memoList[indexSet.first!])
+                    memodb.delete()
                     results.remove(atOffsets: indexSet)
+                } else {
+                    memoListViewModel.deleteMemo(targetMemo: memoList[indexSet.first!])
                 }
             })
         }

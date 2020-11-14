@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct MemoListView: View {
     @EnvironmentObject var viewModel: MemoListViewModel
     
     var body: some View {
         NavigationView {
+//            AdView()
             MemoList(memoList: $viewModel.memoList)
             .navigationBarTitle(Text("メモ一覧"), displayMode: .inline)
             .navigationBarItems(leading: EditButton(), trailing:
@@ -19,6 +21,10 @@ struct MemoListView: View {
                     Image(systemName: "magnifyingglass")
                 }
             )
+            .onAppear {
+                viewModel.memoList = []
+                viewModel.getAllInRealm(memodb: MemoDB())
+            }
         }
     }
 }

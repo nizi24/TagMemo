@@ -7,7 +7,9 @@ target 'SuguMemo' do
 
   # Pods for realmtest
   pod 'RealmSwift'
-
+  pod 'Firebase/Analytics'
+  pod 'Google-Mobile-Ads-SDK'
+  
   target 'SuguMemoTests' do
     inherit! :search_paths
     # Pods for testing

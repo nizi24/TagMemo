@@ -6,6 +6,20 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
+
+struct AdView: UIViewRepresentable {
+    func makeUIView(context: Context) -> GADBannerView {
+        let banner = GADBannerView(adSize: kGADAdSizeBanner)
+        banner.adUnitID = "ca-app-pub-2760885204397772/9202658323"
+        banner.rootViewController = UIApplication.shared.windows.first?.rootViewController
+        banner.load(GADRequest())
+        return banner
+    }
+
+    func updateUIView(_ uiView: GADBannerView, context: Context) {
+    }
+}
 
 struct ContentView: View {
     @State private var selection = 1
@@ -32,6 +46,7 @@ struct ContentView: View {
         .onAppear(perform: {
             Setting().findOrCreate()
         })
+
     }
 }
 

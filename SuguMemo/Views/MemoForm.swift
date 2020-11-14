@@ -7,6 +7,12 @@
 
 import SwiftUI
 
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
 struct MemoForm: View {
     @Binding var title: String
     @Binding var context: String
@@ -15,7 +21,7 @@ struct MemoForm: View {
     
     var body: some View {
         VStack {
-            TextField("タイトル", text: $title)
+            TextField("タイトル(省略可)", text: $title)
                 .padding()
             Divider()
             HStack {
@@ -48,11 +54,11 @@ struct MemoForm: View {
                                         .frame(width: 10, height: 10)
                                 })
                             }
+                            .foregroundColor(Color.white)
                             .padding(5)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 4)
-                                    .stroke(Color.black)
-                            )
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                            
                         }
                     }
                 }

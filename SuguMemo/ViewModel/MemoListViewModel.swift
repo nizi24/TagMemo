@@ -11,6 +11,7 @@ import RealmSwift
 
 class MemoListViewModel: ObservableObject {
     @Published var memoList: [Memo] = []
+    
     init(memodb: MemoDBProtocol = MemoDB()) {
         self.getAllInRealm(memodb: memodb)
     }
@@ -30,4 +31,5 @@ class MemoListViewModel: ObservableObject {
         let memodb = MemoDB().newMemoDB(memo: targetMemo)
         memodb.delete()
     }
+    
 }
